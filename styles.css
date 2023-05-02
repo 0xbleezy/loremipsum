@@ -51,7 +51,7 @@ video {
 .email-form {
     display: none; /* Hide the email form on desktop by default */
     position: absolute;
-    bottom: 12%; /* Position the form below the Coming Soon text */
+    bottom: 10%; /* Position the form below the Coming Soon text */
     left: 0;
     right: 0;
     text-align: center;
