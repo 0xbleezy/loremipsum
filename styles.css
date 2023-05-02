@@ -79,7 +79,6 @@ video {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 767px) {
     .coming-soon {
         display: block; /* Show the text on mobile devices */
     }
@@ -90,4 +89,3 @@ video {
         justify-content: center;
         align-items: center;
     }
-}
