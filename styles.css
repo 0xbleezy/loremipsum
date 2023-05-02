@@ -68,5 +68,6 @@ video {
 
     video {
         object-fit: contain;
+        transform: rotate(90deg); /* Rotate the video 90 degrees clockwise */
     }
 }
