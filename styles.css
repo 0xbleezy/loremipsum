@@ -42,18 +42,19 @@ video {
     color: #fff;
     text-align: center;
     position: absolute; /* Position the text at the desired location */
-    bottom: 18%; /* Move the text higher from the bottom */
+    bottom: 25%; /* Move the text higher from the bottom */
     left: 0;
     right: 0;
     font-family: 'Urbanist', sans-serif; /* Add Urbanist font to the .coming-soon class */
 }
 
+/* Email form styles */
 .email-form {
     display: none; /* Hide the email form on desktop by default */
     position: absolute;
-    bottom: 10%; /* Position the form below the Coming Soon text */
-    left: 0;
-    right: 0;
+    bottom: 15%; /* Position the form below the Coming Soon text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the form horizontally */
     text-align: center;
 }
 
@@ -73,4 +74,20 @@ video {
     background-color: #f1c40f;
     color: #000;
     border: none;
-    border-radius: 0 5px 5px 
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .coming-soon {
+        display: block; /* Show the text on mobile devices */
+    }
+
+    .email-form {
+        display: flex; /* Show the email form on mobile devices */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
