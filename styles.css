@@ -14,7 +14,7 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: #000;
-    font-family: 'Urbanist', sans-serif; /* Add Urbanist font to the body */
+    font-family: 'Urbanist', sans-serif;
 }
 
 .video-container {
@@ -31,28 +31,28 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Show the full video while maintaining aspect ratio */
+    object-fit: contain;
     z-index: -1;
 }
 
 /* Coming Soon text styles */
 .coming-soon {
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
-    text-align: center;
-    position: absolute; /* Position the text at the desired location */
-    top: 20px; /* Add this line to set the distance from the top */
-    left: 20px; /* Add this line to set the distance from the left */
-    font-family: 'Urbanist', sans-serif; /* Add Urbanist font to the .coming-soon class */
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Urbanist', sans-serif;
 }
 
 /* Email form styles */
 .email-form {
-    display: none; /* Hide the email form on mobile by default */
+    display: none;
     position: absolute;
-    bottom: 20px; /* Position the form at the bottom right corner */
-    right: 20px; /* Add this line to set the distance from the right */
-    text-align: center;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
 }
 
 .email-form input {
@@ -78,21 +78,23 @@ video {
 /* Media query for mobile devices */
 @media (max-width: 767px) {
     .coming-soon {
-        display: block; /* Show the text on mobile devices */
+        display: block;
         top: auto;
         left: 0;
         right: 0;
-        bottom: 25%; /* Move the text higher from the bottom on mobile */
+        bottom: 18%;
+        text-align: center;
     }
 
     .email-form {
-        display: flex; /* Show the email form on mobile devices */
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        bottom: 15%; /* Position the form below the Coming Soon text on mobile */
+        bottom: 12%;
         right: auto;
         left: 50%;
-        transform: translateX(-50%); /* Center the form horizontally */
+        transform: translateX(-50%);
+        text-align: center;
     }
 }
