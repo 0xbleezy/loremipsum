@@ -14,6 +14,7 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: #000;
+    font-family: 'Urbanist', sans-serif; /* Add Urbanist font to the body */
 }
 
 .video-container {
@@ -37,13 +38,14 @@ video {
 /* Coming Soon text styles */
 .coming-soon {
     display: none; /* Hide the text on desktop by default */
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
-    position: absolute; /* Add this line to position the text at the bottom */
-    bottom: 20%; /* Add this line to set the distance from the bottom */
+    position: absolute; /* Position the text at the desired location */
+    bottom: 18%; /* Move the text 15% higher from the bottom */
     left: 0;
     right: 0;
+    font-family: 'Urbanist', sans-serif; /* Add Urbanist font to the .coming-soon class */
 }
 
 @media (max-width: 767px) {
