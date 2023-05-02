@@ -68,5 +68,21 @@ video {
 
     video {
         object-fit: contain;
+        transform: rotate(90deg); /* Rotate the video 90 degrees clockwise */
+    }
+}
+
+/* Coming Soon text styles */
+.coming-soon {
+    display: none; /* Hide the text on desktop by default */
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .coming-soon {
+        display: block; /* Show the text on mobile devices */
     }
 }
