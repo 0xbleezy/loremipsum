@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 video {
@@ -29,54 +30,15 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Show the full video while maintaining aspect ratio */
     z-index: -1;
-}
-
-/* Desktop-specific styles */
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .video-container {
-        width: 100%;
-        height: 100%;
-    }
-
-    video {
-        object-fit: cover;
-    }
-}
-
-/* Mobile-specific styles */
-@media (max-width: 767px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .video-container {
-        width: 100%;
-        height: 100%;
-        padding-top: 20%; /* Adjust this value based on your desired mobile layout */
-        padding-bottom: 20%;
-    }
-
-    video {
-        object-fit: contain;
-        transform: rotate(90deg); /* Rotate the video 90 degrees clockwise */
-    }
 }
 
 /* Coming Soon text styles */
 .coming-soon {
     display: none; /* Hide the text on desktop by default */
     font-size: 24px;
-    color: #fff;
+    color: #fff; /* Set the text color to white */
     text-align: center;
     margin-top: 10px;
 }
