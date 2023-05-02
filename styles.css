@@ -38,9 +38,12 @@ video {
 .coming-soon {
     display: none; /* Hide the text on desktop by default */
     font-size: 24px;
-    color: #fff; /* Set the text color to white */
+    color: #fff;
     text-align: center;
-    margin-top: 10px;
+    position: absolute; /* Add this line to position the text at the bottom */
+    bottom: 20px; /* Add this line to set the distance from the bottom */
+    left: 0;
+    right: 0;
 }
 
 @media (max-width: 767px) {
