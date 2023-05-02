@@ -33,21 +33,3 @@ video {
     object-fit: contain; /* Show the full video while maintaining aspect ratio */
     z-index: -1;
 }
-
-/* Coming Soon text styles */
-.coming-soon {
-    display: none; /* Hide the text on desktop by default */
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    position: absolute; /* Position the text at the desired location */
-    bottom: 20%; /* Move the text 15% higher from the bottom */
-    left: 0;
-    right: 0;
-}
-
-@media (max-width: 767px) {
-    .coming-soon {
-        display: block; /* Show the text on mobile devices */
-    }
-}
